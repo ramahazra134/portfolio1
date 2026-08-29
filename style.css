@@ -1083,7 +1083,7 @@
 
         .image-card img {
             width: 100%;
-            max-width: 450px;
+            /* max-width: 450px; */
             display: block;
             border-radius: 40px;
             transition: transform 0.5s;
