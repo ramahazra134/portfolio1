@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Portfolio | Building Modern, Responsive & User-Friendly Web Experiences</title>
+    <!-- Google Fonts + Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========= PREMIUM ANIMATED HEADER ========= -->
+<header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+        <!-- Logo with animation -->
+        <a href="#" class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-feather-alt"></i>
+            </div>
+            <div class="logo-text">Port<span>folio</span></div>
+        </a>
+
+        <!-- Navigation Menu -->
+        <div class="nav-menu" id="navMenu">
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+             
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- CTA Button with animation -->
+            <a href="#contact" class="cta-button">
+                <i class="fas fa-arrow-right"></i> Hire Me
+            </a>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<!-- ========= ANIMATED BANNER SECTION WITH TYPING ========= -->
+<section class="banner">
+    <!-- Animated Background Shapes -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <div class="container">
+        <div class="banner-content">
+            <!-- Left Side - Text Content -->
+            <div class="banner-text">
+                <div class="greeting-badge">
+                    <i class="fas fa-hand-peace"></i>
+                    <span>Welcome to my creative space</span>
+                    <i class="fas fa-sparkle"></i>
+                </div>
+
+                <h1>
+                    I'm <span class="name-highlight">Rama Hazra</span><br>
+                    Digital Creator
+                </h1>
+
+                <!-- Typing Animation Container -->
+                <div class="typing-container">
+                    <span class="typing-label">I do</span>
+                    <span class="typing-text" id="typedText"></span>
+                    <span class="typed-cursor">|</span>
+                </div>
+
+                <p>
+                    I craft stunning digital experiences that blend creativity with cutting-edge technology. 
+                    Let's bring your ideas to life with modern, responsive, and user-centered design.
+                </p>
+
+                <div class="button-group">
+                    <a href="#" class="btn btn-primary">
+                        View My Work <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-comment"></i> Let's Talk
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side - Animated Image -->
+            <div class="banner-image">
+                <div class="image-wrapper">
+                    <div class="ring-decoration"></div>
+                    <img class="profile-img" src="girl_p.jpg" alt="Alex Morgan - Portfolio">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Social Icons -->
+    <div class="social-floating">
+        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-down" onclick="document.getElementById('about')?.scrollIntoView({behavior: 'smooth'})">
+        <span>SCROLL</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+
+<!-- ========= ANIMATED ABOUT SECTION ========= -->
+<section class="about-section">
+    <!-- Background Animations -->
+    <div class="about-bg-dots"></div>
+    <div class="about-blur blur-1"></div>
+    <div class="about-blur blur-2"></div>
+
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="fas fa-user-astronaut"></i>
+                <span>Get to know me</span>
+                <i class="fas fa-smile-wink"></i>
+            </div>
+            <h2>About <span>Me</span></h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <!-- About Content -->
+        <div class="about-grid">
+            <!-- Left Side - Image with Animations -->
+            <div class="about-image-side">
+                <div class="image-card">
+                    <div class="decor-ring"></div>
+                    <img src="girl_p.jpg" alt="Profile Portrait">
+                </div>
+                <div class="exp-badge">
+                    <div class="years">8<span>+</span></div>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+
+            <!-- Right Side - Content -->
+            <div class="about-content-side">
+                <h3 class="about-title">Creative Designer & Developer</h3>
+                <p class="about-description">
+                    I'm Rama Hazra, a passionate creative professional with over 8 years of experience in 
+                    crafting digital experiences that inspire and engage. I believe in the power of design 
+                    to solve problems and tell compelling stories.
+                </p>
+                <p class="about-description">
+                    My approach combines minimal aesthetics with robust functionality, ensuring every project 
+                    not only looks beautiful but also performs exceptionally. I've worked with startups, 
+                    agencies, and global brands to deliver impactful digital solutions.
+                </p>
+
+                <!-- Animated Stats -->
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="stat-number">120+</span>
+                        <span class="stat-label">Projects Done</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Awards Won</span>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="skill-section">
+                    <h4>
+                        <i class="fas fa-code" style="color: #3b82f6;"></i>
+                        My Expertise
+                    </h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Frontend Dev</span>
+                        <span class="skill-tag">React/Next.js</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Animation</span>
+                        <span class="skill-tag">Brand Identity</span>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <a href="#" class="about-btn">
+                    Download CV <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========= ANIMATED SKILLS SECTION ========= -->
+<section class="skills-section">
+    <!-- Background Animations -->
+    <div class="skills-bg-pattern"></div>
+    <div class="floating-orb orb-1"></div>
+    <div class="floating-orb orb-2"></div>
+    <div class="floating-orb orb-3"></div>
+
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="fas fa-crown"></i>
+                <span>What I Do Best</span>
+                <i class="fas fa-rocket"></i>
+            </div>
+            <h2>My <span>Skills</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Technical expertise & creative abilities that bring ideas to life</p>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+            <!-- Design Skills Card -->
+            <div class="skill-card">
+                <div class="card-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>Design</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-paint-brush"></i> UI/UX Design</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-fill" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                        <span>98%</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-fill" data-width="98"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-figma"></i> Figma / Adobe XD</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-fill" data-width="92"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-drafting-compass"></i> Prototyping</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-fill" data-width="90"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Skills Card -->
+            <div class="skill-card">
+                <div class="card-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Development</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name"><i class="fab fa-react"></i> React / Next.js</span>
+                        <span>94%</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-fill" data-width="94"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name"><i class="fab fa-js"></i> JavaScript / TypeScript</span>
+                        <span>91%</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-fill" data-width="91"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name"><i class="fab fa-node"></i> Node.js / Python</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-database"></i> MongoDB / PostgreSQL</span>
+                        <span>82%</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-fill" data-width="82"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Skills Card -->
+            <div class="skill-card">
+                <div class="card-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Soft Skills</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-users"></i> Team Leadership</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-fill" data-width="92"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-comments"></i> Communication</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-fill" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-clock"></i> Time Management</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-fill" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+                        <span>96%</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-fill" data-width="96"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="tools-section">
+            <div class="tools-title">
+                <i class="fas fa-tools"></i>
+                <span>Tools & Technologies I Work With</span>
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-item"><i class="fab fa-figma"></i><span>Figma</span></div>
+                <div class="tool-item"><i class="fab fa-react"></i><span>React</span></div>
+                <div class="tool-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                <div class="tool-item"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="tool-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                <div class="tool-item"><i class="fas fa-database"></i><span>MongoDB</span></div>
+                <div class="tool-item"><i class="fab fa-tailwind"></i><span>Tailwind</span></div>
+                <div class="tool-item"><i class="fab fa-sass"></i><span>Sass</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========= ANIMATED PROJECTS SECTION ========= -->
+<section class="projects-section">
+    <!-- Animated Background Lines -->
+    <div class="bg-lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div id="particles"></div>
+
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="fas fa-star"></i>
+                <span>My Creative Works</span>
+                <i class="fas fa-magic"></i>
+            </div>
+            <h2>Featured <span>Projects</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">A showcase of my finest work, blending creativity with cutting-edge technology</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Dev</button>
+            <button class="filter-btn" data-filter="design">UI/UX</button>
+            <button class="filter-btn" data-filter="app">Mobile App</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+            <!-- Project 1 - Web Dev -->
+            <div class="project-card" data-category="web">
+                <div class="project-img-container">
+                    <img class="project-img" src="https://placehold.co/600x400/f1f5f9/3b82f6?text=Nexus+Analytics" alt="Nexus Analytics">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-link"><i class="fas fa-link"></i></a>
+                        <a href="#" class="overlay-link"><i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category"><i class="fas fa-code"></i> Web Development</span>
+                    <h3>Nexus Analytics</h3>
+                    <p>Real-time analytics dashboard with interactive charts and data visualization for enterprise clients.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Tailwind</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 - UI/UX -->
+            <div class="project-card" data-category="design">
+                <div class="project-img-container">
+                    <img class="project-img" src="https://placehold.co/600x400/eef2ff/3b82f6?text=Flow+Banking" alt="Flow Banking">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-link"><i class="fas fa-link"></i></a>
+                        <a href="#" class="overlay-link"><i class="fas fa-paint-brush"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category"><i class="fas fa-palette"></i> UI/UX Design</span>
+                    <h3>Flow Banking App</h3>
+                    <p>Modern banking app design with seamless user experience and intuitive financial tracking.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Prototyping</span>
+                        <span class="tech-tag">User Testing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 - Mobile App -->
+            <div class="project-card" data-category="app">
+                <div class="project-img-container">
+                    <img class="project-img" src="https://placehold.co/600x400/f1f5f9/3b82f6?text=FitTrack" alt="FitTrack">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-link"><i class="fas fa-link"></i></a>
+                        <a href="#" class="overlay-link"><i class="fas fa-mobile-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category"><i class="fas fa-mobile-alt"></i> Mobile App</span>
+                    <h3>FitTrack</h3>
+                    <p>Fitness tracking app with personalized workout plans and real-time progress monitoring.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Redux</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 - Web Dev -->
+            <div class="project-card" data-category="web">
+                <div class="project-img-container">
+                    <img class="project-img" src="https://placehold.co/600x400/eef2ff/3b82f6?text=EcoMarket" alt="EcoMarket">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-link"><i class="fas fa-link"></i></a>
+                        <a href="#" class="overlay-link"><i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category"><i class="fas fa-code"></i> Web Development</span>
+                    <h3>EcoMarket</h3>
+                    <p>Sustainable e-commerce platform with carbon footprint calculator and eco-friendly products.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Stripe</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 - UI/UX -->
+            <div class="project-card" data-category="design">
+                <div class="project-img-container">
+                    <img class="project-img" src="https://placehold.co/600x400/f1f5f9/3b82f6?text=MediCare" alt="MediCare">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-link"><i class="fas fa-link"></i></a>
+                        <a href="#" class="overlay-link"><i class="fas fa-paint-brush"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category"><i class="fas fa-palette"></i> UI/UX Design</span>
+                    <h3>MediCare Portal</h3>
+                    <p>Healthcare patient portal with appointment scheduling and telemedicine integration.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Adobe XD</span>
+                        <span class="tech-tag">Wireframing</span>
+                        <span class="tech-tag">Accessibility</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 - Mobile App -->
+            <div class="project-card" data-category="app">
+                <div class="project-img-container">
+                    <img class="project-img" src="https://placehold.co/600x400/eef2ff/3b82f6?text=TravelBuddy" alt="TravelBuddy">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-link"><i class="fas fa-link"></i></a>
+                        <a href="#" class="overlay-link"><i class="fas fa-mobile-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category"><i class="fas fa-mobile-alt"></i> Mobile App</span>
+                    <h3>TravelBuddy</h3>
+                    <p>Travel planning app with itinerary builder, local recommendations, and offline maps.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Google Maps API</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="view-all">
+            <a href="#" class="view-all-btn">
+                View All Projects <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- ========= ANIMATED RESUME SECTION ========= -->
+<section class="resume-section">
+    <!-- Background Waves -->
+    <div class="bg-waves">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <!-- Floating Dots -->
+    <div class="floating-dots" id="floatingDots"></div>
+
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="fas fa-file-alt"></i>
+                <span>My Professional Journey</span>
+                <i class="fas fa-rocket"></i>
+            </div>
+            <h2>My <span>Resume</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Experience, education & skills that define my career path</p>
+        </div>
+
+        <!-- Resume Grid -->
+        <div class="resume-grid">
+            <!-- Left Column - Experience -->
+            <div class="resume-column">
+                <div class="column-title">
+                    <div class="title-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Work Experience</h3>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="item-date"><i class="far fa-calendar-alt"></i> 2022 - Present</span>
+                        <h4>Senior Product Designer</h4>
+                        <div class="subtitle">Creative Agency · San Francisco, CA</div>
+                        <p>Leading design initiatives for Fortune 500 clients, creating scalable design systems, and mentoring junior designers. Increased user engagement by 45% through innovative UX solutions.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="item-date"><i class="far fa-calendar-alt"></i> 2020 - 2022</span>
+                        <h4>UI/UX Developer</h4>
+                        <div class="subtitle">Digital Studio · New York, NY</div>
+                        <p>Developed responsive web applications and collaborated with cross-functional teams to deliver 20+ successful projects. Implemented modern design patterns improving performance by 35%.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="item-date"><i class="far fa-calendar-alt"></i> 2018 - 2020</span>
+                        <h4>Frontend Developer</h4>
+                        <div class="subtitle">Startup Hub · Remote</div>
+                        <p>Built reusable component libraries and optimized website performance. Received "Employee of the Month" twice for exceptional delivery and innovation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Education -->
+            <div class="resume-column">
+                <div class="column-title">
+                    <div class="title-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education</h3>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="item-date"><i class="far fa-calendar-alt"></i> 2016 - 2018</span>
+                        <h4>Master of Design</h4>
+                        <div class="subtitle">Stanford University · California</div>
+                        <p>Specialized in Human-Computer Interaction and Design Thinking. Graduated with honors and published research on inclusive design patterns.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="item-date"><i class="far fa-calendar-alt"></i> 2012 - 2016</span>
+                        <h4>Bachelor of Fine Arts</h4>
+                        <div class="subtitle">Rhode Island School of Design</div>
+                        <p>Major in Digital Media with focus on interactive design. Dean's list all semesters and recipient of the Excellence in Design Award.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="item-date"><i class="far fa-calendar-alt"></i> 2010 - 2012</span>
+                        <h4>Certifications</h4>
+                        <div class="subtitle">Various Institutions</div>
+                        <p>Google UX Design Certificate · AWS Cloud Practitioner · Scrum Master Certified</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="column-title" style="margin-top: 50px; margin-bottom: 30px;">
+            <div class="title-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h3>Technical Skills</h3>
+        </div>
+        <div class="skills-container">
+            <span class="skill-badge"><i class="fab fa-figma"></i> Figma</span>
+            <span class="skill-badge"><i class="fab fa-react"></i> React</span>
+            <span class="skill-badge"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-badge"><i class="fab fa-adobe"></i> Adobe Creative Suite</span>
+            <span class="skill-badge"><i class="fas fa-database"></i> MongoDB</span>
+            <span class="skill-badge"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-badge"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+            <span class="skill-badge"><i class="fas fa-paint-brush"></i> UI/UX Design</span>
+            <span class="skill-badge"><i class="fas fa-chart-line"></i> Data Visualization</span>
+        </div>
+
+        <!-- Download CV Button -->
+        <div class="download-cv">
+            <a href="#" class="download-btn">
+                <i class="fas fa-download"></i> Download Full Resume (PDF)
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ========= ANIMATED CONTACT SECTION ========= -->
+<section class="contact-section">
+    <!-- Background Waves -->
+    <div class="bg-waves">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="floating-particles" id="floatingParticles"></div>
+
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="fas fa-comment-dots"></i>
+                <span>Get In Touch</span>
+                <i class="fas fa-heart"></i>
+            </div>
+            <h2>Let's <span>Connect</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Have a project in mind? I'd love to hear from you!</p>
+        </div>
+
+        <!-- Contact Grid -->
+        <div class="contact-grid">
+            <!-- Left Side - Contact Info -->
+            <div class="contact-info-side">
+                <h3 class="info-title">Let's talk about your project</h3>
+                <p class="info-description">I'm always excited to collaborate on new projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+
+                <!-- Contact Cards -->
+                <div class="contact-card">
+                    <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="card-content">
+                        <h4>Phone</h4>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="card-content">
+                        <h4>Email</h4>
+                        <p>hello@alexmorgan.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="card-content">
+                        <h4>Location</h4>
+                        <p>San Francisco, California</p>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-links-section">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Contact Form -->
+            <div class="contact-form-side">
+                <div class="form-card">
+                    <form id="contactForm" action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========= BOTTOM FOOTER SECTION ========= -->
+<footer class="bottom-footer">
+    <!-- Background Pattern -->
+    <div class="footer-bg"></div>
+    
+    <!-- Floating Particles -->
+    <div class="footer-particles" id="footerParticles"></div>
+
+    <div class="container">
+        <div class="footer-main">
+            <!-- Footer Grid -->
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="footer-l-text">Portfo<span>lio</span></div>
+                    </a>
+                    <p class="brand-description">
+                        Creating stunning digital experiences that inspire and engage. Let's build something amazing together.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Web Design</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Frontend Dev</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Brand Identity</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> SEO Optimization</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Consulting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter Column -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Get in Touch</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <span class="contact-text">San Francisco, CA 94105</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <span class="contact-text">hello@portfolio.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <span class="contact-text">+1 (555) 123-4567</span>
+                    </div>
+                    
+                    <div style="margin-top: 25px;">
+                        <p class="newsletter-text">Subscribe for latest updates</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="newsletter-btn">
+                                <i class="fas fa-paper-plane"></i> Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 <a href="#">Portfolio</a>. All rights reserved. Made with <i class="fas fa-heart" style="color: #3b82f6;"></i> for excellence
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+    
+
+</body>
+</html>
